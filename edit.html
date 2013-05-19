@@ -1,0 +1,22 @@
+<!--"Pregunta: respuesta" -->
+
+<h3>Edite una pregunta</h3>
+
+<form method="POST" action="/quiz/update">
+
+<!--hidden: se utiliza para pasar aquellos datos que necesite el script pero que no interesa que introduzca el usuario.  Se suele usar para transmitir información de estado ó control ó para enviar algún tipo de información que no debe ser variada en el formulario, pero sí debe ser enviada junto a este. No se visualiza en la página, no se muestra ningún campo para la entrada de datos al usuario-->
+
+<input type="hidden" 
+	name="_method" 
+    value="PUT">
+
+  <p>Edite la pregunta</p>
+  <p>
+  <input type="text"
+         name="preg"
+         value="<%question%>"
+         size="50"></p>
+  <p>
+  <input type="submit" value="Editar">
+
+</form>

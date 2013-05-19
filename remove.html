@@ -1,0 +1,28 @@
+<h3>Borrar una pregunta</h3>
+
+  <form method="POST" action="/quiz/delete">
+
+    <input type="hidden"
+           name="_method"
+           value="DELETE">  
+   <p>Seleccione la pregunta que desee borrar:</p>
+   <p>
+   <select name="preg">
+   <%r1%>
+   </select>
+   <p>
+   <input type="submit" value="Borrar">
+
+  
+  </form>
+
+  <h3>Editar una pregunta y su respuesta</h3>
+
+  <form method="GET" action="/quiz/edit">
+      <p>Seleccione la pregunta:respuesta que quiera modificar:</p>
+     <p>
+     <select name="preg">
+     <%r1%>
+     </select>
+     <input type="submit" value="Editar">    
+</form>
